@@ -12,6 +12,10 @@ docker build . -t weather
 docker run -it -p 8080:8080 -e WEATHER_API_KEY=$WEATHER_API_KEY -e HOST=0.0.0.0 weather 
 ```
 
+# Testing Areas
+1. Need to to check if any fields are optional. I noticed that alerts was
+2. Need to verify alerts are handled as expected
+
 # Improvements
 1. I feel like there is a way with less boilerplate to serialize the application.conf into scala case classes using pureconfig.
 2. For a real application, I would probably persist more information on the on the weather conditions property rather than just an enumeration
