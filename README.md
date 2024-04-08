@@ -21,6 +21,7 @@ docker run -it -p 8080:8080 -e WEATHER_API_KEY=$WEATHER_API_KEY -e HOST=0.0.0.0 
 6. I would persist the api call information in the application.conf file. It would be nice in case the environment ever changes
 7. I used Scala 3. I haven't used that in a production environment yet and suspect it would benefit me to learn about some of the changes. 
 8. I have a logback file, but am using SL4J within the app. Probably need to add a file for that as well. 
+9. Error handling needs to be added (**Probably the biggest need to improve**)
 
 # Things I liked
 1. I have never used the pureconf library before. I liked it quite a bit for initializing an app
